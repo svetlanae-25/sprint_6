@@ -1,11 +1,7 @@
 #Страница заказа
 import allure
-import time
 from pages.base_page import BasePage
 from locators.order_page_locators import OrderPageLocators
-from selenium.webdriver.support.wait import WebDriverWait
-from selenium.webdriver.support import expected_conditions as EC
-from selenium.webdriver.common.by import By
 
 class OrderPage(BasePage):
     @allure.step("Заполнение первой формы 'Для кого самокат'")

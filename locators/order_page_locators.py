@@ -8,8 +8,6 @@ class OrderPageLocators:
     ADDRESS = (By.XPATH, "//input[@placeholder='* Адрес: куда привезти заказ']")
     METRO_STATION = (By.XPATH, "//input[@placeholder='* Станция метро']")
     METRO_STATION_SELECTED = (By.XPATH, "//div[@class='select-search__select']//button[1]") # Выбор первого варианта в списке
-    # METRO_STATION_SOKOLNIKI = (By.XPATH, "//div[contains(text(), 'Сокольники')]")
-    # METRO_STATION_KOMSOMOLSKAYA = (By.XPATH, "//div[contains(text(), 'Комсомольская')]")
     PHONE = (By.XPATH, "//input[@placeholder='* Телефон: на него позвонит курьер']")
     NEXT_BUTTON = (By.XPATH, "//button[text()='Далее']")
 

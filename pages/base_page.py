@@ -6,10 +6,12 @@ from selenium.webdriver.support import expected_conditions as EC
 TIMEOUT = 10
 
 class BasePage:
+    
     def __init__(self, driver):
         self.driver = driver
 
-    def url(self):#Возвращает URL
+    @allure.step("Возвращает текущий URL страницы")
+    def current_url(self):
         return self.driver.current_url
 
     

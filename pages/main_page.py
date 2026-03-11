@@ -25,10 +25,7 @@ class MainPage(BasePage):
         self.click_element(MainPageLocators.ORDER_BUTTON_MIDDLE)
 
 
-    @allure.step("Вернуть текущий URL")
-    def is_main_page(self):
-        return self.driver.current_url
-    
+       
     @allure.step("Принять куки, если есть")
     def accept_cookies(self):
         try:

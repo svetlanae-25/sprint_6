@@ -76,7 +76,7 @@ class TestOrder:
         main_page.click_order_button_on_top()#Переходим на страницу заказа по клику на кнопку "Заказать" вверху страницы 
         order_page = OrderPage(driver)
         order_page.click_samokat_logo() #Кликаем по логотипу Самоката
-        assert driver.current_url == main_site #Проверяем, что находимся на главной странице
+        assert order_page.current_url() == main_site #Проверяем, что находимся на главной странице
             
             
     @allure.title("Клик по логотипу Яндекса открывает Дзен в новой вкладке")
@@ -88,7 +88,7 @@ class TestOrder:
         order_page.click_yandex_logo() # Кликаем по логотипу Яндекса
         order_page.switch_to_window()
         # Проверяем, что открылся Дзен
-        assert "dzen.ru" in driver.current_url
+        assert "dzen.ru" in order_page.current_url()
 
 
    
